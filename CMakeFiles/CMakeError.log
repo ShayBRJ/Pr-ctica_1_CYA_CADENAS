@@ -1,0 +1,232 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2c5b8/fast && /usr/bin/make -f CMakeFiles/cmTC_2c5b8.dir/build.make CMakeFiles/cmTC_2c5b8.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c5b8.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2c5b8.dir/src.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2c5b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c5b8.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_2c5b8.dir/src.cxx.o  -o cmTC_2c5b8 
+/usr/bin/ld: CMakeFiles/cmTC_2c5b8.dir/src.cxx.o: en la función `main':
+src.cxx:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.cxx:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.cxx:(.text+0x63): referencia a `pthread_join' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_2c5b8.dir/build.make:87: cmTC_2c5b8] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_2c5b8/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e2bf1/fast && /usr/bin/make -f CMakeFiles/cmTC_e2bf1.dir/build.make CMakeFiles/cmTC_e2bf1.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e2bf1.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e2bf1.dir/CheckFunctionExists.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_e2bf1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2bf1.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e2bf1.dir/CheckFunctionExists.cxx.o  -o cmTC_e2bf1  -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e2bf1.dir/build.make:87: cmTC_e2bf1] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e2bf1/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b2627/fast && /usr/bin/make -f CMakeFiles/cmTC_b2627.dir/build.make CMakeFiles/cmTC_b2627.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b2627.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b2627.dir/src.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b2627
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2627.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_b2627.dir/src.cxx.o  -o cmTC_b2627 
+/usr/bin/ld: CMakeFiles/cmTC_b2627.dir/src.cxx.o: en la función `main':
+src.cxx:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.cxx:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.cxx:(.text+0x63): referencia a `pthread_join' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_b2627.dir/build.make:87: cmTC_b2627] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b2627/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_61fab/fast && /usr/bin/make -f CMakeFiles/cmTC_61fab.dir/build.make CMakeFiles/cmTC_61fab.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61fab.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_61fab.dir/CheckFunctionExists.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_61fab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61fab.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_61fab.dir/CheckFunctionExists.cxx.o  -o cmTC_61fab  -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_61fab.dir/build.make:87: cmTC_61fab] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_61fab/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fed45/fast && /usr/bin/make -f CMakeFiles/cmTC_fed45.dir/build.make CMakeFiles/cmTC_fed45.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fed45.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fed45.dir/src.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fed45
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fed45.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_fed45.dir/src.cxx.o  -o cmTC_fed45 
+/usr/bin/ld: CMakeFiles/cmTC_fed45.dir/src.cxx.o: en la función `main':
+src.cxx:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.cxx:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.cxx:(.text+0x63): referencia a `pthread_join' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_fed45.dir/build.make:87: cmTC_fed45] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_fed45/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c8c5a/fast && /usr/bin/make -f CMakeFiles/cmTC_c8c5a.dir/build.make CMakeFiles/cmTC_c8c5a.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8c5a.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_c8c5a.dir/CheckFunctionExists.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_c8c5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8c5a.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_c8c5a.dir/CheckFunctionExists.cxx.o  -o cmTC_c8c5a  -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c8c5a.dir/build.make:87: cmTC_c8c5a] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c8c5a/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_79e8e/fast && /usr/bin/make -f CMakeFiles/cmTC_79e8e.dir/build.make CMakeFiles/cmTC_79e8e.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_79e8e.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_79e8e.dir/src.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_79e8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79e8e.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_79e8e.dir/src.cxx.o  -o cmTC_79e8e 
+/usr/bin/ld: CMakeFiles/cmTC_79e8e.dir/src.cxx.o: en la función `main':
+src.cxx:(.text+0x46): referencia a `pthread_create' sin definir
+/usr/bin/ld: src.cxx:(.text+0x52): referencia a `pthread_detach' sin definir
+/usr/bin/ld: src.cxx:(.text+0x63): referencia a `pthread_join' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_79e8e.dir/build.make:87: cmTC_79e8e] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_79e8e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_28f6f/fast && /usr/bin/make -f CMakeFiles/cmTC_28f6f.dir/build.make CMakeFiles/cmTC_28f6f.dir/build
+make[1]: se entra en el directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_28f6f.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_28f6f.dir/CheckFunctionExists.cxx.o -c /home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_28f6f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28f6f.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_28f6f.dir/CheckFunctionExists.cxx.o  -o cmTC_28f6f  -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_28f6f.dir/build.make:87: cmTC_28f6f] Error 1
+make[1]: se sale del directorio '/home/hbarquin/Escritorio/Program-Shay/CYA/PR1/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_28f6f/fast] Error 2
+
+
+

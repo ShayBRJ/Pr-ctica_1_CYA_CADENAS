@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/CadenaMain.dir/src/main.cc.o CMakeFiles/CadenaMain.dir/src/Cadena.cc.o CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o CMakeFiles/CadenaMain.dir/src/Symbol.cc.o  -o build/CadenaMain 

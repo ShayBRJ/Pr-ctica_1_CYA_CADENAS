@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/runTests.dir/test/gtest_main.cc.o CMakeFiles/runTests.dir/src/Cadena.cc.o CMakeFiles/runTests.dir/src/Alfabeto.cc.o CMakeFiles/runTests.dir/src/Symbol.cc.o  -o build/runTests  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

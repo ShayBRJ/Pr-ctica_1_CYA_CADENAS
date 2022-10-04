@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ClienteCadena.dir/src/Cadena.cc.o CMakeFiles/ClienteCadena.dir/src/Alfabeto.cc.o CMakeFiles/ClienteCadena.dir/src/Symbol.cc.o CMakeFiles/ClienteCadena.dir/src/gtest_main.cc.o  -o build/ClienteCadena 

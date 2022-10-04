@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Alfabeto.h
+set
+-
+sstream
+-
+vector
+-
+Symbol.h
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Symbol.h
+Cadena.h
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
+
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
+Alfabeto.h
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Alfabeto.h
+vector
+-
+
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Symbol.h
+string.h
+-
+string
+-
+cassert
+-
+iostream
+-
+
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc
+main_analysis.h
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main_analysis.h
+
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main_analysis.h
+../include/Cadena.h
+/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
+fstream
+-
+
