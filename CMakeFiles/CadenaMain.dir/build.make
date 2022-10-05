@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto
+CMAKE_SOURCE_DIR = /home/usuario/Practica1_Cadena
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto
+CMAKE_BINARY_DIR = /home/usuario/Practica1_Cadena
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CadenaMain.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/CadenaMain.dir/flags.make
 
 CMakeFiles/CadenaMain.dir/src/main.cc.o: CMakeFiles/CadenaMain.dir/flags.make
 CMakeFiles/CadenaMain.dir/src/main.cc.o: src/main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CadenaMain.dir/src/main.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/main.cc.o -c /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CadenaMain.dir/src/main.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/main.cc.o -c /home/usuario/Practica1_Cadena/src/main.cc
 
 CMakeFiles/CadenaMain.dir/src/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CadenaMain.dir/src/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc > CMakeFiles/CadenaMain.dir/src/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Practica1_Cadena/src/main.cc > CMakeFiles/CadenaMain.dir/src/main.cc.i
 
 CMakeFiles/CadenaMain.dir/src/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CadenaMain.dir/src/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc -o CMakeFiles/CadenaMain.dir/src/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Practica1_Cadena/src/main.cc -o CMakeFiles/CadenaMain.dir/src/main.cc.s
 
 CMakeFiles/CadenaMain.dir/src/Cadena.cc.o: CMakeFiles/CadenaMain.dir/flags.make
 CMakeFiles/CadenaMain.dir/src/Cadena.cc.o: src/Cadena.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CadenaMain.dir/src/Cadena.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Cadena.cc.o -c /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Cadena.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CadenaMain.dir/src/Cadena.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Cadena.cc.o -c /home/usuario/Practica1_Cadena/src/Cadena.cc
 
 CMakeFiles/CadenaMain.dir/src/Cadena.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CadenaMain.dir/src/Cadena.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Cadena.cc > CMakeFiles/CadenaMain.dir/src/Cadena.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Practica1_Cadena/src/Cadena.cc > CMakeFiles/CadenaMain.dir/src/Cadena.cc.i
 
 CMakeFiles/CadenaMain.dir/src/Cadena.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CadenaMain.dir/src/Cadena.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Cadena.cc -o CMakeFiles/CadenaMain.dir/src/Cadena.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Practica1_Cadena/src/Cadena.cc -o CMakeFiles/CadenaMain.dir/src/Cadena.cc.s
 
 CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o: CMakeFiles/CadenaMain.dir/flags.make
 CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o: src/Alfabeto.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o -c /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Alfabeto.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o -c /home/usuario/Practica1_Cadena/src/Alfabeto.cc
 
 CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Alfabeto.cc > CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Practica1_Cadena/src/Alfabeto.cc > CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.i
 
 CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Alfabeto.cc -o CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Practica1_Cadena/src/Alfabeto.cc -o CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.s
 
 CMakeFiles/CadenaMain.dir/src/Symbol.cc.o: CMakeFiles/CadenaMain.dir/flags.make
 CMakeFiles/CadenaMain.dir/src/Symbol.cc.o: src/Symbol.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CadenaMain.dir/src/Symbol.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Symbol.cc.o -c /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Symbol.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CadenaMain.dir/src/Symbol.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CadenaMain.dir/src/Symbol.cc.o -c /home/usuario/Practica1_Cadena/src/Symbol.cc
 
 CMakeFiles/CadenaMain.dir/src/Symbol.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CadenaMain.dir/src/Symbol.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Symbol.cc > CMakeFiles/CadenaMain.dir/src/Symbol.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/usuario/Practica1_Cadena/src/Symbol.cc > CMakeFiles/CadenaMain.dir/src/Symbol.cc.i
 
 CMakeFiles/CadenaMain.dir/src/Symbol.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CadenaMain.dir/src/Symbol.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Symbol.cc -o CMakeFiles/CadenaMain.dir/src/Symbol.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/usuario/Practica1_Cadena/src/Symbol.cc -o CMakeFiles/CadenaMain.dir/src/Symbol.cc.s
 
 # Object files for target CadenaMain
 CadenaMain_OBJECTS = \
@@ -125,7 +125,7 @@ build/CadenaMain: CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o
 build/CadenaMain: CMakeFiles/CadenaMain.dir/src/Symbol.cc.o
 build/CadenaMain: CMakeFiles/CadenaMain.dir/build.make
 build/CadenaMain: CMakeFiles/CadenaMain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable build/CadenaMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable build/CadenaMain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CadenaMain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/CadenaMain.dir/clean:
 .PHONY : CMakeFiles/CadenaMain.dir/clean
 
 CMakeFiles/CadenaMain.dir/depend:
-	cd /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/usuario/Practica1_Cadena && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/Practica1_Cadena /home/usuario/Practica1_Cadena /home/usuario/Practica1_Cadena /home/usuario/Practica1_Cadena /home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CadenaMain.dir/depend
 

@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto
+CMAKE_SOURCE_DIR = /home/usuario/Practica1_Cadena
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto
+CMAKE_BINARY_DIR = /home/usuario/Practica1_Cadena
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/CadenaMain.dir/clean
 CMakeFiles/CadenaMain.dir/all:
 	$(MAKE) -f CMakeFiles/CadenaMain.dir/build.make CMakeFiles/CadenaMain.dir/depend
 	$(MAKE) -f CMakeFiles/CadenaMain.dir/build.make CMakeFiles/CadenaMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles --progress-num=1,2,3,4,5 "Built target CadenaMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/usuario/Practica1_Cadena/CMakeFiles --progress-num=1,2,3,4,5 "Built target CadenaMain"
 .PHONY : CMakeFiles/CadenaMain.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CadenaMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Practica1_Cadena/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CadenaMain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/Practica1_Cadena/CMakeFiles 0
 .PHONY : CMakeFiles/CadenaMain.dir/rule
 
 # Convenience name for target.

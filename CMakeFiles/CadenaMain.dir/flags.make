@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include 
+CXX_INCLUDES = -I/home/usuario/Practica1_Cadena/include 
 

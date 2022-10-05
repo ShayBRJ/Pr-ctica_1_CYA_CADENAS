@@ -64,7 +64,7 @@ Cadena Cadena::inversa(Alfabeto simbolos) {
     return Cadena("&");
   }
   if(!(simbolos.VerificarCadena(this->getSecuencia()))) {
-    std::string{"ERROR"};
+    return Cadena("ERROR");
   }
   std::string auxiliar, cadena_inversa;
   int j, i = this->secuencia.size() - 1;
@@ -90,8 +90,11 @@ Cadena Cadena::inversa(Alfabeto simbolos) {
 std::vector<Cadena> Cadena::Prefijos(Alfabeto simbolos) {
   
   std::vector<Cadena> auxiliar_cadenas;
+  if(!(simbolos.VerificarCadena(this->secuencia)))  {
+    auxiliar_cadenas.push_back(Cadena("ERROR"));
+    return auxiliar_cadenas;
+  }
   auxiliar_cadenas.push_back(Cadena("&"));
-  if(!(simbolos.VerificarCadena(this->secuencia))) return auxiliar_cadenas;
   std::string auxiliar, cadena_resultado;
   int max = 0, contador_vector = 1;
   for(int i = 0; i < this->secuencia.length(); i++) {
@@ -118,8 +121,11 @@ std::vector<Cadena> Cadena::Prefijos(Alfabeto simbolos) {
 std::vector<Cadena> Cadena::Sufijos(Alfabeto simbolos) {
 
   std::vector<Cadena> auxiliar_cadenas;
+  if(!(simbolos.VerificarCadena(this->secuencia)))  {
+    auxiliar_cadenas.push_back(Cadena("ERROR"));
+    return auxiliar_cadenas;
+  }
   auxiliar_cadenas.push_back(Cadena("&"));
-  if(!(simbolos.VerificarCadena(this->secuencia))) return auxiliar_cadenas;
   std::string auxiliar, cadena_resultado, cadena_resultado_final;
   int max = 0, contador_vector = 1;
   for(int i = this->secuencia.size() - 1; i >= 0; i--) {
@@ -127,7 +133,7 @@ std::vector<Cadena> Cadena::Sufijos(Alfabeto simbolos) {
       auxiliar.clear();
       auxiliar.push_back(this->secuencia.at(i - t));
       cadena_resultado =  auxiliar + cadena_resultado;
-      if(simbolos.getAlphabet().find(cadena_resultado) != simbolos.getAlphabet().end()&& cadena_resultado.size() > max) {
+      if(simbolos.getAlphabet().find(cadena_resultado) != simbolos.getAlphabet().end() && cadena_resultado.size() > max) {
         cadena_resultado_final = cadena_resultado;
         max = cadena_resultado.size() - 1;
       }
@@ -145,8 +151,11 @@ std::vector<Cadena> Cadena::Sufijos(Alfabeto simbolos) {
 
 std::set<Cadena> Cadena::Subcadenas(Alfabeto simbolos) {
   std::set<Cadena> auxiliar_cadenas;
+  if(!(simbolos.VerificarCadena(this->secuencia))) {
+    auxiliar_cadenas.insert(Cadena("ERROR"));
+    return auxiliar_cadenas;
+  }
   auxiliar_cadenas.insert(Cadena("&"));
-  if(!(simbolos.VerificarCadena(this->secuencia))) return auxiliar_cadenas;
   for (int i = 0; i < this->secuencia.length(); i++) {
     for(int j = i + 1; j < this->secuencia.length() + 1; j++) {
       std::string auxiliar = this->secuencia.substr(i, j - i);

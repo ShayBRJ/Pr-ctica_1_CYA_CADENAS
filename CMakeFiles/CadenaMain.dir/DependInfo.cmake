@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Alfabeto.cc" "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o"
-  "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Cadena.cc" "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir/src/Cadena.cc.o"
-  "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/Symbol.cc" "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir/src/Symbol.cc.o"
-  "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc" "/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir/src/main.cc.o"
+  "/home/usuario/Practica1_Cadena/src/Alfabeto.cc" "/home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir/src/Alfabeto.cc.o"
+  "/home/usuario/Practica1_Cadena/src/Cadena.cc" "/home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir/src/Cadena.cc.o"
+  "/home/usuario/Practica1_Cadena/src/Symbol.cc" "/home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir/src/Symbol.cc.o"
+  "/home/usuario/Practica1_Cadena/src/main.cc" "/home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir/src/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

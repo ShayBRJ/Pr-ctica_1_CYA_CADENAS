@@ -26,3 +26,6 @@ std::string Symbol::getSymbol() const {
   return this->unique_symbol;
 }
 
+bool operator<(const Symbol& simb1, const Symbol& simb2) {
+  return simb1.getSymbol() < simb2.getSymbol();
+}

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Alfabeto.h
+/home/usuario/Practica1_Cadena/include/Alfabeto.h
 set
 -
 sstream
@@ -14,17 +14,17 @@ sstream
 vector
 -
 Symbol.h
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Symbol.h
+/home/usuario/Practica1_Cadena/include/Symbol.h
 Cadena.h
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
+/home/usuario/Practica1_Cadena/include/Cadena.h
 
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
+/home/usuario/Practica1_Cadena/include/Cadena.h
 Alfabeto.h
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Alfabeto.h
+/home/usuario/Practica1_Cadena/include/Alfabeto.h
 vector
 -
 
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Symbol.h
+/home/usuario/Practica1_Cadena/include/Symbol.h
 string.h
 -
 string
@@ -34,13 +34,7 @@ cassert
 iostream
 -
 
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main.cc
-main_analysis.h
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main_analysis.h
-
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/src/main_analysis.h
+/home/usuario/Practica1_Cadena/src/Cadena.cc
 ../include/Cadena.h
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/include/Cadena.h
-fstream
--
+/home/usuario/Practica1_Cadena/include/Cadena.h
 

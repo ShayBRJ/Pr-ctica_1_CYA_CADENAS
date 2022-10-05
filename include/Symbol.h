@@ -23,12 +23,11 @@ class Symbol {
     Symbol(const std::string& simbol);
     Symbol(const char& simbol);
     std::string getSymbol() const;
-    friend bool operator<(const Symbol& simb1, const Symbol& simb2) {
-      return simb1.getSymbol() < simb2.getSymbol();
-    }
+    friend bool operator<(const Symbol&, const Symbol&);
 
   private:
     std::string unique_symbol;
 
 };
 
+bool operator<(const Symbol&, const Symbol&);

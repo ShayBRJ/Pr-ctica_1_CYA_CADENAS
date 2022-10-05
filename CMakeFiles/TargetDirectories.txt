@@ -1,3 +1,3 @@
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/rebuild_cache.dir
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/edit_cache.dir
-/home/usuario/Pr-ctica-Cadena-Simbolos-y-ALfabeto/CMakeFiles/CadenaMain.dir
+/home/usuario/Practica1_Cadena/CMakeFiles/rebuild_cache.dir
+/home/usuario/Practica1_Cadena/CMakeFiles/edit_cache.dir
+/home/usuario/Practica1_Cadena/CMakeFiles/CadenaMain.dir
