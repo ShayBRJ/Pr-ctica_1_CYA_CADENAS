@@ -7,7 +7,7 @@
  * @author Borja Medina Ramos (alu0101337609@ull.edu.es)
  * @brief  Implementación de la clase Alfabeto
  * @version 0.1
- * @date 2022-09-14
+ * @date 2022-09-30
  * @bug La clase alfabeto no operaba correctamente con los simbolos dados al verificar una cadena (CORREGIDO)
  * @copyright Copyright (c) 2022
  * 
@@ -72,9 +72,9 @@ bool Alfabeto::VerificarCadena(Cadena cadena_clase) const {
     j = i;
     bandera = false;
     for(int k = 0; k < MaxSizeSymbol() && (j + k) < cadena.length(); k++) {
-      auxiliar.push_back(cadena.at(j+k));
+      auxiliar.push_back(cadena.at(j + k));
       if(simbolos_alfabeto.find(auxiliar) != simbolos_alfabeto.end()) {
-        j+=k;
+        j += k;
         bandera = true;
         break;
       }

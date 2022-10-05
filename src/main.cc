@@ -8,7 +8,7 @@
  * @brief  Programa principal que leerá un archivo por comando junto a una opción opcode que
  * determinará la operación a realizar y mostrará en un fichero de salida dichas operaciones.
  * @version 0.1
- * @date 2022-09-14
+ * @date 2022-09-30
  * @bug La clase alfabeto no operaba correctamente con los simbolos dados al verificar una cadena (CORREGIDO)
  * @copyright Copyright (c) 2022
  * 

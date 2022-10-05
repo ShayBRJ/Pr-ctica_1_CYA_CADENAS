@@ -7,7 +7,7 @@
  * @author Borja Medina Ramos (alu0101337609@ull.edu.es)
  * @brief  Implementación de la clase Symbol
  * @version 0.1
- * @date 2022-09-14
+ * @date 2022-09-30
  * @bug La clase alfabeto no operaba correctamente con los simbolos dados al verificar una cadena (CORREGIDO)
  * @copyright Copyright (c) 2022
  * 
