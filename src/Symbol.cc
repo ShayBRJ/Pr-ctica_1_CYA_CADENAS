@@ -15,7 +15,9 @@
  */
 #include "../include/Symbol.h"
 
-Symbol::Symbol(const char &simbol) { this->unique_symbol.push_back(simbol); }
+Symbol::Symbol(const char &simbol) { 
+  this->unique_symbol.push_back(simbol); 
+}
 
 Symbol::Symbol(const std::string &simbolo_) : unique_symbol(simbolo_) {
   assert(!simbolo_.empty());

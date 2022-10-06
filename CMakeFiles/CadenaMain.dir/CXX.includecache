@@ -42,6 +42,10 @@ iostream
 ../include/Cadena.h
 /home/usuario/Practica1_Cadena/include/Cadena.h
 
+/home/usuario/Practica1_Cadena/src/Symbol.cc
+../include/Symbol.h
+/home/usuario/Practica1_Cadena/include/Symbol.h
+
 /home/usuario/Practica1_Cadena/src/main.cc
 main_analysis.h
 /home/usuario/Practica1_Cadena/src/main_analysis.h

@@ -46,8 +46,9 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "cinttypes": "cpp",
-    "typeinfo": "cpp"
+    "editor.insertSpaces": "true",
+    "editor.tabSize": "4",
+    "typeinfo": "cpp",
+    "documment.activateOnEnter": "true"
   }
-  
-
 }

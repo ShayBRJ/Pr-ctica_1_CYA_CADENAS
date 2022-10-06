@@ -15,6 +15,12 @@
  */
 #include "../include/Alfabeto.h"
 
+
+/**
+ * @brief  Constructor de la clase alfabeto donde se les pasa símbolos con espacios entre sí.
+ * @note   Se tomará como símbolos aquellas elementos separados por ' '.
+ * @param  conjunto_simbolos: Todos los simbolos de ese alfabeto.
+ */
 Alfabeto::Alfabeto(std::string conjunto_simbolos) {
   this->simbolos_alfabeto.clear();
   if (conjunto_simbolos.find(' ') >= conjunto_simbolos.length()) {
@@ -30,24 +36,52 @@ Alfabeto::Alfabeto(std::string conjunto_simbolos) {
     }
   }
 }
-
+/**
+ * @brief  Constructor de copia
+ * @note   Para construir un objeto en base a otro.
+ * @param  &copia: 
+ */
 Alfabeto::Alfabeto(const Alfabeto &copia) {
   this->simbolos_alfabeto = copia.simbolos_alfabeto;
 }
-
-Alfabeto::Alfabeto() { this->simbolos_alfabeto.clear(); }
-
+/**
+ * @brief  Crea un alfabeto con la cadena vacía como único elemento.
+ * @note   Por definición un alfabeto debe ser no vacío, por lo tanto, se agrega la cadena vacía.
+ *         y así poder operar correctamente.
+ * @retval 
+ */
+Alfabeto::Alfabeto() { 
+  this->simbolos_alfabeto.clear();
+  this->simbolos_alfabeto.insert(Symbol("&")); 
+}
+/**
+ * @brief  Operador de flujo de salida.
+ * @note   Inserta todos los elementos del alfabeto por el flujo de salida.
+ * @param  &os: 
+ * @param  alphabet: 
+ * @retval 
+ */
 std::ostream &operator<<(std::ostream &os, Alfabeto alphabet) {
   for (auto x : alphabet.getAlphabet()) {
     os << x.getSymbol() << " ";
   }
   return os;
 }
-
+/**
+ * @brief  Método para insertar símbolos al alfabeto.
+ * @note   
+ * @param  simbolo: 
+ * @retval None
+ */
 void Alfabeto::Insert(Symbol simbolo) {
   this->simbolos_alfabeto.insert(simbolo);
 }
-
+/**
+ * @brief  Determina el tamaño máximo de los símbolos.
+ * @note   Esto sirve a la hora de obtener subcadenas ya que trocearemos y
+ *         analizaremos la cadena dada con un máximo del valor devuelto.
+ * @retval int: Tamaño máximo de la cadena.
+ */
 int Alfabeto::MaxSizeSymbol() const {
   int max = 0;
   for (auto x : this->simbolos_alfabeto) {
@@ -57,7 +91,12 @@ int Alfabeto::MaxSizeSymbol() const {
   }
   return max;
 }
-
+/**
+ * @brief  Método que indica si dicha cadena pueda pertenecer al alfabeto correspondiente.
+ * @note   
+ * @param  cadena_a_verificar: 
+ * @retval bool: Si la pueda ser construida mediante una secuencia de los símbolos de un alfabeto.
+ */
 bool Alfabeto::VerificarCadena(Cadena cadena_a_verificar) const {
   std::string cadena = cadena_a_verificar.getSecuencia();
   if (cadena.empty() || (strcmp(cadena.c_str(), "&") == 0))
