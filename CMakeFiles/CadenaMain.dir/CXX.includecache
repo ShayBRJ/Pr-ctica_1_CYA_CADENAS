@@ -34,7 +34,21 @@ cassert
 iostream
 -
 
+/home/usuario/Practica1_Cadena/src/Alfabeto.cc
+../include/Alfabeto.h
+/home/usuario/Practica1_Cadena/include/Alfabeto.h
+
 /home/usuario/Practica1_Cadena/src/Cadena.cc
 ../include/Cadena.h
 /home/usuario/Practica1_Cadena/include/Cadena.h
+
+/home/usuario/Practica1_Cadena/src/main.cc
+main_analysis.h
+/home/usuario/Practica1_Cadena/src/main_analysis.h
+
+/home/usuario/Practica1_Cadena/src/main_analysis.h
+../include/Cadena.h
+/home/usuario/Practica1_Cadena/include/Cadena.h
+fstream
+-
 

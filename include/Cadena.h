@@ -22,13 +22,11 @@ class Cadena {
   public:
   Cadena(std::string);
   std::string getSecuencia() const;
+  friend bool operator<(const Cadena& simb1, const Cadena& simb2);
   friend std::ostream& operator<<(std::ostream&, const Cadena&);
   std::vector<Cadena> Prefijos(Alfabeto);
   std::vector<Cadena> Sufijos(Alfabeto);
   std::set<Cadena> Subcadenas(Alfabeto);
-  friend bool operator<(const Cadena& simb1, const Cadena& simb2) {
-      return simb1.getSecuencia() < simb2.getSecuencia();
-    }
   Cadena inversa(Alfabeto);
   int length(Alfabeto);
   bool VerificacionAlfabeto();
@@ -36,3 +34,5 @@ class Cadena {
     std::string secuencia;
     bool verificacion;
 };
+
+bool operator<(const Cadena& simb1, const Cadena& simb2);
